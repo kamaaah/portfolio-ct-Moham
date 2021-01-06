@@ -1,0 +1,291 @@
+@font-face{
+    font-family: subtitle;
+    src: url('../fonts/Oswald/Oswald-VariableFont_wght.ttf');
+}
+@font-face{
+    font-family: description-title;
+    src: url('../fonts/Russo_One/RussoOne-Regular.ttf');
+}
+html,
+body,
+footer,
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* ------------  Section header ----------------*/
+header, body, footer{
+    font-size: 12px;
+}
+.header{
+    display: block;
+    height: 115px;
+    padding: 0;
+    margin: 0 0 5px 0;
+    border: 1px solid red;
+}
+
+.grid-container-header{
+    height: 80px;
+    display: grid;
+    position: relative;
+    margin: 0  40px;
+    grid-template-columns: 50% 50%;    
+    background-color: rgb(214, 210, 210);
+    border: 1px solid green;      
+}
+
+.top-description{ 
+    display: block;
+    border: 1px solid rgb(209, 145, 5);
+}
+.top-title-left .description-title{
+    margin: 0 50px;
+    padding: 2px;
+   
+}
+.description-title h1{
+    font-family: description-title; 
+    font-weight: bold;   
+    font-size: 20px;
+    border:1px solid #8f0a0a;
+}
+
+.subtitle .subtitle-item{
+    font-family: subtitle;
+    /* font-size: 10px; */
+    font-weight: bold;
+    letter-spacing: 4px;
+    border:1px solid #8f0a0a;
+}
+.subtitle{
+    margin: 0px 9px;
+    
+}
+
+.top-title-right{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    
+}
+.top-title-right .download-file{
+    margin-top: 5px;
+}
+.top-title-right .download-file a, .share a{    
+    margin-right: 20px;    
+    /* font-size: 10px; */
+    letter-spacing: 1px;
+    text-decoration: none;    
+    color: rgb(68, 176, 248);
+    border:1px solid #8f0a0a;
+}
+
+
+
+.navbar{   
+    height: 30px;
+    margin: 0  40px;
+    background-color: rgb(214, 210, 210);
+    border: 1px solid brown;
+}
+.navbar .menu{ 
+    vertical-align: middle;  
+    display: flex;    
+    overflow: hidden;
+    list-style-type: none;    
+    justify-content: center;    
+    width: 100%;
+}
+.navbar .menu-item{     
+    margin: 0 7%;  
+}
+
+.menu .menu-item .menu-item-link{
+    /* display: flex;  */
+    position: relative;
+    text-decoration: none;      
+    text-align: center;    
+    font-weight: bold;
+    color:black;
+    
+}
+/* --- End -----  Section header ----------------*/
+/* -------------Section main ------------------- */
+
+
+.main{
+    border:1px solid red
+}
+.grid-midle-container{ 
+    display: grid; 
+    grid-template-columns: 39% auto;
+    grid-template-rows: 150px 500px;    
+    margin: 0 40px;
+    grid-column-gap: 2px;
+    grid-row-gap: 5px;
+    padding: 15px 5px 5px 5px;
+    margin: 5px 40px;
+    border: 1px solid green;
+}
+
+.top-midle-left{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-content: center;
+    border: 1px solid blue
+}
+
+.top-midle-right{  
+    grid-column-start: 2;
+    grid-column-end: 9;
+    grid-row-start: 1 ;
+    grid-row-end: 2;
+    
+    border: 1px solid rgba(102, 134, 13, 0.904);
+}
+
+
+.midle-left{
+    grid-column-start:1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;   
+    border: 1px solid #8f0a0a;
+}
+
+/* ----- Section Article midle top left------------ */
+
+
+.midle-right{
+    grid-column-start:3;
+    grid-column-end:9 ;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border: 1px solid #0daa7b;
+}
+
+.top-left-image{
+    height:100px;
+    width: 250px;
+    border: 1px solid rgb(204, 3, 204);   
+}
+
+.top-left-img{    
+    margin-left: 7%;    
+    width: 250px; 
+} 
+/* ---End -- Section Article midle top left-------- */
+
+/* ------------Section midle top right------------- */
+
+.interview{   
+    padding: 30px 0 30px 0; 
+}
+
+.top-right-title{
+    margin-bottom: 15px;
+    margin-left: 80px;
+    color: #6b8391;
+    font-weight:bold ;
+}
+.top-right-subtitle{
+    margin-left:55px;
+    
+}
+.top-right-subtitle-info{
+    margin-left:155px;
+}
+
+/* ----End--------Section midle top right------------- */
+/*  -------Section midle-left------------------------ */
+.presentation{
+    width: 700px;
+    margin-top: 25px;
+    border-top: 1px solid #6b8391;
+    border-bottom: 1px solid #6b8391;
+}
+.presentation-img{
+    margin-top: 15px;
+    /* height: 100px; */
+    /* width: 60%; */
+    /* border: 2px solid rgb(0, 4, 255); */
+}
+
+
+.presentation-text{
+    height: 80px;
+    width:700px;
+    margin-top: 20px;
+    border: 1px solid #6b8391;
+}
+
+.presentation-text .avatar{   
+    width: 65px;
+    height: 70px;
+    border-radius: 50%;
+    float: left;
+    margin: 0 50px 0 15px;    
+    border: 1px solid red;    
+}
+
+.grid-domain{
+    height: 70px;
+    width: 700px;
+    grid-template-rows: 250px;
+    grid-template-columns:  150px  150px  150px  150px;   
+    display: grid;
+    margin: 20px;    
+    grid-column-gap: 40px; 
+    border: 2px solid #0daa7b;    
+}
+.grid-domain p{
+    display: inline-block;
+}
+
+.section-domain{ 
+    padding: 20px;
+    text-align: center;  
+    height: auto;   
+    border: 1px solid orange;     
+}
+.section-domain .graphisme-img,
+.section-domain .integration-img,
+.developement-img,
+.referencement-img
+{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+
+
+/*  -------Section midle-left------------------------ */
+
+
+
+/* --- End -----Section main ------------------- */
+/* -------------Section du Footer ---------------*/
+.footer{ 
+    height: 12vh;
+    margin: 4px 0;
+    border: 1px solid red;
+}
+.footer-info{
+    margin: 2px 40px;
+    height: 11vh;
+    
+    border: 2px solid green;
+}
+.footer-info-item{
+    margin-top: 10px ;
+    text-align: center;
+}
+/* ----End -----Section du Footer -------------- */
+    
+
